@@ -4,14 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TAIKO SOLAR ENERGY | Reliable Solar Solutions in Abuja</title>
+  <meta name="description" content="TAIKO SOLAR ENERGY provides reliable and affordable solar power solutions, lithium batteries, and inverter systems in Garki, Abuja." />
 
   <!-- Font Awesome CDN -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4xk8+Q2wG5f5+XG7Z9K1Q=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
   />
 
   <style>
@@ -76,15 +74,15 @@
       text-decoration: underline;
     }
 
-    /* Hamburger Icon */
+    /* Hamburger icon */
     .menu-toggle {
       display: none;
       font-size: 26px;
-      cursor: pointer;
       color: #fff;
+      cursor: pointer;
     }
 
-    /* Side Navbar */
+    /* Side navbar */
     .side-nav {
       position: fixed;
       top: 0;
@@ -102,12 +100,11 @@
     }
 
     .side-nav .close-btn {
-      font-size: 24px;
       color: #fff;
+      font-size: 22px;
       cursor: pointer;
-      margin-bottom: 30px;
-      display: block;
       text-align: right;
+      margin-bottom: 30px;
     }
 
     .side-nav ul {
@@ -122,11 +119,6 @@
       color: #fff;
       text-decoration: none;
       font-size: 18px;
-      font-weight: 500;
-    }
-
-    .side-nav ul li a:hover {
-      text-decoration: underline;
     }
 
     /* Overlay */
@@ -182,6 +174,82 @@
       padding: 70px 0;
     }
 
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h3 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .services,
+    .why-us {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .service-card {
+      background: var(--light);
+      padding: 25px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .service-card h4 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .why-card {
+      border-left: 5px solid var(--accent);
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .reviews {
+      background: var(--light);
+    }
+
+    .review-box {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .review {
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    form button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
     footer {
       background: var(--dark);
       color: #fff;
@@ -190,7 +258,6 @@
       margin-top: 50px;
     }
 
-    /* Mobile Styles */
     @media (max-width: 768px) {
       nav ul {
         display: none;
@@ -209,11 +276,11 @@
 
 <body>
 
-<!-- Side Navigation -->
+<!-- Mobile Side Navbar -->
 <div class="side-nav" id="sideNav">
-  <span class="close-btn" onclick="closeNav()">
+  <div class="close-btn" onclick="closeNav()">
     <i class="fas fa-times"></i>
-  </span>
+  </div>
   <ul>
     <li><a href="#services" onclick="closeNav()">Services</a></li>
     <li><a href="#why" onclick="closeNav()">Why Us</a></li>
@@ -255,12 +322,98 @@
   </div>
 </section>
 
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h3>Our Services</h3>
+      <p>Complete solar energy solutions you can trust</p>
+    </div>
+
+    <div class="services">
+      <div class="service-card">
+        <h4>Solar Power Systems</h4>
+        <p>High-quality solar solutions for homes, offices, and businesses.</p>
+      </div>
+      <div class="service-card">
+        <h4>Lithium Batteries</h4>
+        <p>Affordable and durable lithium battery energy storage solutions.</p>
+      </div>
+      <div class="service-card">
+        <h4>Inverter Systems</h4>
+        <p>Advanced inverter systems including 48V 5kWh screen-touch models.</p>
+      </div>
+      <div class="service-card">
+        <h4>After-Sales Support</h4>
+        <p>Professional guidance and customer support after installation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="section-title">
+      <h3>Why Choose Us</h3>
+    </div>
+
+    <div class="why-us">
+      <div class="why-card">5.0-Star Rating from Verified Customers</div>
+      <div class="why-card">Affordable Pricing with Premium Quality</div>
+      <div class="why-card">Strong & Reliable Solar Products</div>
+      <div class="why-card">Physical Office in Garki, Abuja</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="section-title">
+      <h3>Customer Reviews</h3>
+    </div>
+
+    <div class="review-box">
+      <p class="review">“The products are strong and reliable. Affordable too.”</p>
+      <p class="review">“Their lithium battery is affordable and the quality is top-notch.”</p>
+      <p><strong>★★★★★ 5.0 Rating (8 Reviews)</strong></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h3>Contact Us</h3>
+    </div>
+
+    <div class="contact">
+      <div class="contact-info">
+        <p><strong>Address:</strong> Block D, Garki International Market, Abuja</p>
+        <p><strong>Phone:</strong> 0706 367 5673</p>
+        <p><strong>Hours:</strong> Mon–Fri 9am–5pm | Sat 9am–3:30pm</p>
+      </div>
+
+      <form id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
 <footer>
   <p>&copy; <span id="year"></span> TAIKO SOLAR ENERGY. All Rights Reserved.</p>
 </footer>
 
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Thank you for contacting TAIKO SOLAR ENERGY. We will get back to you shortly.");
+    this.reset();
+  });
 
   function openNav() {
     document.getElementById("sideNav").classList.add("active");
